@@ -380,7 +380,7 @@ export class TNSPlayer implements TNSPlayerI {
     onAudioFocusChange: (focusChange: number) => {
       switch (focusChange) {
         case android.media.AudioManager.AUDIOFOCUS_GAIN:
-          TNS_Player_Log('AUDIOFOCUS_GAIN');
+          TNS_Player_Log('AUDIOFOCUS_GAIN22222222');
           // Set volume level to desired levels
           TNS_Player_Log('this._lastPlayerVolume', this._lastPlayerVolume);
           // if last volume more than 10 just set to 1.0 float
@@ -390,7 +390,7 @@ export class TNSPlayer implements TNSPlayerI {
             this.volume = parseFloat('0.' + this._lastPlayerVolume.toString());
           }
 
-          this.resume();
+        //  this.resume();
           break;
         case android.media.AudioManager.AUDIOFOCUS_GAIN_TRANSIENT:
           TNS_Player_Log('AUDIOFOCUS_GAIN_TRANSIENT');
